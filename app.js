@@ -53,10 +53,10 @@ const appsData = [
         modType: "Premium",
         fileFormat: "APK",
         minAndroid: "Android 6.0+"
-    }
+    },
 
     {
-    "id": 4,
+    "id": 3,
     "title": "YouTube ReVanced",
     "version": "v20.13.41",
     "category": "video players & editors",
