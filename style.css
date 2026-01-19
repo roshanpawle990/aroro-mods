@@ -1,4 +1,27 @@
-
+/* Popup modal */
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.7);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:9999;
+}
+.modal-content{
+    background:#111;
+    color:#fff;
+    max-width:420px;
+    width:90%;
+    border-radius:12px;
+    padding:20px;
+}
+.modal-close{
+    text-align:right;
+    cursor:pointer;
+    color:#aaa;
+}
+.modal-close:hover{color:#fff}
 
 * {
     margin: 0;
