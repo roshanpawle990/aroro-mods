@@ -359,6 +359,50 @@ function handleInitialBackButton() {
     history.pushState(null, null, null);
 }
 
+/* ===== MENU FIX ===== */
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.onclick = e => {
+    e.stopPropagation();
+    mobileMenu.style.display =
+        mobileMenu.style.display === "block" ? "none" : "block";
+};
+
+document.addEventListener("click", e => {
+    if(!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)){
+        mobileMenu.style.display = "none";
+    }
+});
+
+/* MENU ACTIONS */
+mobileMenu.addEventListener("click", e=>{
+    const item = e.target.closest(".menu-item");
+    if(!item) return;
+
+    const action = item.dataset.action;
+    mobileMenu.style.display = "none";
+
+    if(action === "home"){
+        switchPage("apps");
+        historyStack = ["apps"];
+    }
+
+    if(action === "about"){
+        document.getElementById("aboutModal").style.display="flex";
+    }
+
+    if(action === "telegram"){
+        window.open("https://t.me/your_telegram_channel","_blank");
+    }
+});
+
+/* ABOUT POPUP CLOSE */
+function closeAbout(){
+    document.getElementById("aboutModal").style.display="none";
+}
+
+
 // Search Function
 function setupSearch() {
     document.getElementById('searchInput').addEventListener('input', (e) => {
