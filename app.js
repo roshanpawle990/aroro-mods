@@ -54,6 +54,37 @@ const appsData = [
         fileFormat: "APK",
         minAndroid: "Android 6.0+"
     }
+
+    {
+    "id": 4,
+    "title": "YouTube ReVanced",
+    "version": "v20.13.41",
+    "category": "video players & editors",
+    "rating": 4.9,
+    "size": "140 MB",
+    "downloads": "500M+",
+    "image": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400&h=240&fit=crop",
+    "description": "Premium YouTube experience with ad-blocking, background play, and SponsorBlock integration.",
+    "screenshots": [
+        "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=400&h=200&fit=crop"
+    ],
+    "features": [
+        "Ad-Free (No Video Ads)",
+        "Background Playback",
+        "SponsorBlock Integration",
+        "Return YouTube Dislike (RYD)",
+        "MicroG/GMSCore Support",
+        "HDR & 4K Unlocked"
+    ],
+    "downloadLink": "https://aroromods.com/dl/youtube-revanced.apk",
+    "modType": "Premium / Patched",
+    "fileFormat": "APK",
+    "minAndroid": "Android 8.0+"
+}
+
+
+
+    
 ];
 
 let currentApps = [...appsData];
